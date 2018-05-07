@@ -1,0 +1,32 @@
+{
+    "name": "pinfort/laravel-topnav",
+    "description": "Create smart multi-language website by laravel",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": ">=4.0",
+        "illuminate/view": ">=4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pinfort",
+            "email": "ptg@nijitei.com"
+        }
+    ],
+    "keywords": ["laravel", "multi-language", "language", "localization", "internationalization", "i18n", "l10n"],
+    "autoload": {
+        "psr-4": {
+            "Pinfort\\LaravelLangSelector\\": "src/"
+        }
+	},
+    "minimum-stability": "dev",
+    "include-path": ["src/"],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pinfort\\LaravelLangSelector\\LanguageServiceProvider"
+            ]
+        }
+    }
+}
