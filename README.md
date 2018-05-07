@@ -37,6 +37,6 @@ near the line 66
 ```diff
          </li>
      @endguest
++    @include('LaravelLangSelector::lang_menu')
  </ul>
-+@include('LaravelLangSelector::lang_menu')
 ```
