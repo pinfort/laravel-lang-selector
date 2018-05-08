@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\ViewComposers;
+namespace Pinfort\LaravelLangSelector\ViewComposers;
 
 use Illuminate\View\View;
 use Pinfort\LaravelLangSelector\Language;

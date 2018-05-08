@@ -1,6 +1,6 @@
 <?php
 
-namespace Pinfort\LaravelLangSelector\Language;
+namespace Pinfort\LaravelLangSelector;
 
 use Request;
 use Config;
