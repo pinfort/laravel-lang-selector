@@ -52,3 +52,16 @@ near the line 66
 +    @include('LaravelLangSelector::lang_menu')
  </ul>
 ```
+
+Add middleware to your kernel
+
+in App\Http\Kernel.php near the line 38
+```diff
+ protected $middlewareGroups = [
+    'web' => [
+        ......
++       \Pinfort\LaravelLangSelector\Middleware\LangSelector::class,
+    ],
+ ......
+ ];
+```
