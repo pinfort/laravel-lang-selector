@@ -1,5 +1,5 @@
 {
-    "name": "pinfort/laravel-topnav",
+    "name": "pinfort/laravel-lang-selector",
     "description": "Create smart multi-language website by laravel",
     "type": "library",
     "require": {
