@@ -15,7 +15,9 @@ Attention: Perhaps it is necessary to change the minimum stability of the compos
 ```bash
 php artisan vendor:publish
 ```
-You will find two new files.
+You will find three new files.
+- public/vendor/LangSelector/language.css
+    - It is required.
 - config/language.php
     - You will edit this file.
 - resources/views/vendor/LaravelTopNav/lang_menu.blade.php
@@ -28,6 +30,16 @@ Edit config/language.php whatever you need.
 Read comments in the file.
 
 ### Enable library
+
+Add style sheet link to your view. near the line 14
+
+in resources/views/layouts/app.blade.php(created by make:auth command)
+
+```diff
+ <!-- Styles -->
+ <link href="{{ asset('css/app.css') }}" rel="stylesheet">
++<link href="{{ asset('vendor/LangSelector/language.css') }}" rel="stylesheet">
+```
 
 Add following code in your view.
 

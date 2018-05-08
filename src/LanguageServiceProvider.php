@@ -26,6 +26,10 @@ class LanguageServiceProvider extends ServiceProvider
         ]);
 
         View::composer('LaravelLangSelector::lang_menu', 'Pinfort\LaravelLangSelector\ViewComposers\UserLanguageComposer');
+
+        $this->publishes([
+            __DIR__.'/assets' => public_path('vendor/LangSelector'),
+        ], 'public');
     }
 
     /**
