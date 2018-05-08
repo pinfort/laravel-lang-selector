@@ -30,7 +30,7 @@ class UserLanguageComposer
     {
         $lang = Language::get();
         if (is_null($lang)) {
-            $lang = '';
+            $lang = Config::get('app.locale');
         }
         $this->user_current_language = $lang;
         $language_name = Config::get('language.language_name');
